@@ -52,11 +52,15 @@
 
 
   <script>
-      let userForm=document.getElementById("user-form");
+let userForm=document.getElementById("user-form");
 const retrieveEntries=()=>{
     let entries=localStorage.getItem("user-entries");
-    if(entries){entries=JSON.parse(entries);}
-    else{entries=[];}
+    if(entries){
+      entries=JSON.parse(entries);
+    }
+    else{
+      entries=[];
+    }
     return entries;
 }
 
@@ -128,6 +132,7 @@ userEntries.push(entry);
 }
 userForm.addEventListener("submit",saveUserForm);
 displayEntries();
+
 </script>
 
 </body>
