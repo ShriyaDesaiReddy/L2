@@ -1,7 +1,5 @@
 const http = require("http");
 const fs = require("fs");
-
-let url = request.url
 let homeContent = "";
 let projectContent = "";
 let regContent="";
